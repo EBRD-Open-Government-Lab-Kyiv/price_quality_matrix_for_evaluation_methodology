@@ -56,217 +56,220 @@ Below is an example of requirements specified against both an item and a bidder 
 
 ```json
     
-  "tender": {
-    "criterion": [
-      {
-        "id": "1",
-        "title": "aquisitionInitialCapitalExpedinture",
-        "description": "Decomposed data for Acqusistion/Initial Capital Expenditure",
-        "relatesTo": "tenderer",
-        "source": "tenderer",
-        "requirementGroups": [
-          {
-            "id": "1",
-            "title": "priceOfGoodsProvisionOfService",
-            "requirements": [
-              {
-                "id": "1",
-                "title": "material",
-                "description": "Costs for Materials",
-                "dataType": "value",
-                "period": {
-                  "startDate": "2013-04-03T00:00:00Z",
-                  "endDate": "2014-04-03T00:00:00Z"
-                },
-                "value": {
-                  "amount": "5541314.23",
-                  "currency": "EUR"
-                }
-              },
-              {
-                "id": "2",
-                "title": "labourHourlyRate",
-                "description": "Costs for Labour/Hourly Rate",
-                "dataType": "value",
-                "period": {
-                  "startDate": "2013-04-03T00:00:00Z",
-                  "endDate": "2014-04-03T00:00:00Z"
-                },
-                "value": {
-                  "amount": "5541314.23",
-                  "currency": "EUR"
-                }
-              },
-              {
-                "id": "3",
-                "title": "overheads",
-                "description": "Costs for Overheads",
-                "dataType": "value",
-                "period": {
-                  "startDate": "2013-04-03T00:00:00Z",
-                  "endDate": "2014-04-03T00:00:00Z"
-                },
-                "value": {
-                  "amount": "5541314.23",
-                  "currency": "EUR"
-                }
-              },
-              {
-                "id": "4",
-                "title": "packaging",
-                "description": "Costs for Packaging",
-                "dataType": "value",
-                "period": {
-                  "startDate": "2013-04-03T00:00:00Z",
-                  "endDate": "2014-04-03T00:00:00Z"
-                },
-                "value": {
-                  "amount": "5541314.23",
-                  "currency": "EUR"
-                }
-              },
-              {
-                "id": "5",
-                "title": "profit",
-                "description": "Profit amount",
-                "dataType": "value",
-                "period": {
-                  "startDate": "2013-04-03T00:00:00Z",
-                  "endDate": "2014-04-03T00:00:00Z"
-                },
-                "value": {
-                  "amount": "5541314.23",
-                  "currency": "EUR"
-                }
-              }
+  {
+   "tender":{
+      "criterion":[
+         {
+            "id":"1",
+            "title":"aquisitionInitialCapitalExpedinture",
+            "description":"Decomposed data for Acqusistion/Initial Capital Expenditure",
+            "relatesTo":"tenderer",
+            "source":"tenderer",
+            "requirementGroups":[
+               {
+                  "id":"1",
+                  "title":"priceOfGoodsProvisionOfService",
+                  "requirements":[
+                     {
+                        "id":"1",
+                        "title":"material",
+                        "description":"Costs for Materials",
+                        "dataType":"value",
+                        "period":{
+                           "startDate":"2013-04-03T00:00:00Z",
+                           "endDate":"2014-04-03T00:00:00Z"
+                        },
+                        "value":{
+                           "amount":"5541314.23",
+                           "currency":"EUR"
+                        }
+                     },
+                     {
+                        "id":"2",
+                        "title":"labourHourlyRate",
+                        "description":"Costs for Labour/Hourly Rate",
+                        "dataType":"value",
+                        "period":{
+                           "startDate":"2013-04-03T00:00:00Z",
+                           "endDate":"2014-04-03T00:00:00Z"
+                        },
+                        "value":{
+                           "amount":"5541314.23",
+                           "currency":"EUR"
+                        }
+                     },
+                     {
+                        "id":"3",
+                        "title":"overheads",
+                        "description":"Costs for Overheads",
+                        "dataType":"value",
+                        "period":{
+                           "startDate":"2013-04-03T00:00:00Z",
+                           "endDate":"2014-04-03T00:00:00Z"
+                        },
+                        "value":{
+                           "amount":"5541314.23",
+                           "currency":"EUR"
+                        }
+                     },
+                     {
+                        "id":"4",
+                        "title":"packaging",
+                        "description":"Costs for Packaging",
+                        "dataType":"value",
+                        "period":{
+                           "startDate":"2013-04-03T00:00:00Z",
+                           "endDate":"2014-04-03T00:00:00Z"
+                        },
+                        "value":{
+                           "amount":"5541314.23",
+                           "currency":"EUR"
+                        }
+                     },
+                     {
+                        "id":"5",
+                        "title":"profit",
+                        "description":"Profit amount",
+                        "dataType":"value",
+                        "period":{
+                           "startDate":"2013-04-03T00:00:00Z",
+                           "endDate":"2014-04-03T00:00:00Z"
+                        },
+                        "value":{
+                           "amount":"5541314.23",
+                           "currency":"EUR"
+                        }
+                     }
+                  ]
+               },
+               {
+                  "id":"2",
+                  "title":"commissioningCosts",
+                  "requirements":[
+                     {
+                        "id":"1",
+                        "title":"delivery",
+                        "description":"Costs for Delivery",
+                        "dataType":"value",
+                        "period":{
+                           "startDate":"2013-04-03T00:00:00Z",
+                           "endDate":"2014-04-03T00:00:00Z"
+                        },
+                        "value":{
+                           "amount":"5541314.23",
+                           "currency":"EUR"
+                        }
+                     },
+                     {
+                        "id":"2",
+                        "title":"installation",
+                        "description":"Costs for Installation",
+                        "dataType":"value",
+                        "period":{
+                           "startDate":"2013-04-03T00:00:00Z",
+                           "endDate":"2014-04-03T00:00:00Z"
+                        },
+                        "value":{
+                           "amount":"5541314.23",
+                           "currency":"EUR"
+                        }
+                     },
+                     {
+                        "id":"3",
+                        "title":"training",
+                        "description":"Costs for Training",
+                        "dataType":"value",
+                        "period":{
+                           "startDate":"2013-04-03T00:00:00Z",
+                           "endDate":"2014-04-03T00:00:00Z"
+                        },
+                        "value":{
+                           "amount":"5541314.23",
+                           "currency":"EUR"
+                        }
+                     },
+                     {
+                        "id":"4",
+                        "title":"travel",
+                        "description":"Costs for travel",
+                        "dataType":"value",
+                        "period":{
+                           "startDate":"2013-04-03T00:00:00Z",
+                           "endDate":"2014-04-03T00:00:00Z"
+                        },
+                        "value":{
+                           "amount":"5541314.23",
+                           "currency":"EUR"
+                        }
+                     }
+                  ]
+               }
             ]
-          },
-          {
-            "id": "2",
-            "title": "commissioningCosts",
-            "requirements": [
-              {
-                "id": "1",
-                "title": "delivery",
-                "description": "Costs for Delivery",
-                "dataType": "value",
-                "period": {
-                  "startDate": "2013-04-03T00:00:00Z",
-                  "endDate": "2014-04-03T00:00:00Z"
-                },
-                "value": {
-                  "amount": "5541314.23",
-                  "currency": "EUR"
-                }
-              },
-              {
-                "id": "2",
-                "title": "installation",
-                "description": "Costs for Installation",
-                "dataType": "value",
-                "period": {
-                  "startDate": "2013-04-03T00:00:00Z",
-                  "endDate": "2014-04-03T00:00:00Z"
-                },
-                "value": {
-                  "amount": "5541314.23",
-                  "currency": "EUR"
-                }
-              },
-              {
-                "id": "3",
-                "title": "training",
-                "description": "Costs for Training",
-                "dataType": "value",
-                "period": {
-                  "startDate": "2013-04-03T00:00:00Z",
-                  "endDate": "2014-04-03T00:00:00Z"
-                },
-                "value": {
-                  "amount": "5541314.23",
-                  "currency": "EUR"
-                }
-              },
-              {
-                "id": "4",
-                "title": "travel",
-                "description": "Costs for travel",
-                "dataType": "value",
-                "period": {
-                  "startDate": "2013-04-03T00:00:00Z",
-                  "endDate": "2014-04-03T00:00:00Z"
-                },
-                "value": {
-                  "amount": "5541314.23",
-                  "currency": "EUR"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+         }
+      ]
+   }
 }
 ```
 
 Below is an example of responses which meet the above requirements:
 
 ```json
-  "bids": {
-      "details": [
-        {
-          "id": "1",
-          "requirementResponses": [
-            {
-              "id": "T1",
-              "value": { # new type
-                "amount": 5541314.23,
-                "currency": "EUR"
-              },
-              "period": {
-                "startDate": "2013-04-03T00:00:00Z",
-                "endDate": "2014-04-03T00:00:00Z"
-              }
-              "requirement": {
-                "id": "T1",
-                "title": "FY 1"
-              }
-            },
-            {
-              "id": "T2",
-              "value": {
-                "amount": 9231341.00,
-                "currency": "EUR"
-              },
-              "period": {
-                "startDate": "2014-04-03T00:00:00Z",
-                "endDate": "2015-04-03T00:00:00Z"
-              }
-              "requirement": {
-                "id": "T2",
-                "title": "FY 2"
-              }
-            },
-            {
-              "id": "T3",
-              "value": {
-                "amount": 9941927.15,
-                "currency": "EUR"
-              },
-              "period": {
-                "startDate": "2015-04-03T00:00:00Z",
-                "endDate": "2016-04-03T00:00:00Z"
-              }
-              "requirement": {
-                "id": "T3",
-                "title": "FY 3"
-              }
-            }
-          ]
-        }
+  {
+   "bids":{
+      "details":[
+         {
+            "id":"1",
+            "requirementResponses":[
+               {
+                  "id":"T1",
+                  "value":{
+                     "amount":5541314.23,
+                     "currency":"EUR"
+                  },
+                  "period":{
+                     "startDate":"2013-04-03T00:00:00Z",
+                     "endDate":"2014-04-03T00:00:00Z"
+                  },
+                  "requirement":{
+                     "id":"T1",
+                     "title":"FY 1"
+                  }
+               },
+               {
+                  "id":"T2",
+                  "value":{
+                     "amount":9231341.00,
+                     "currency":"EUR"
+                  },
+                  "period":{
+                     "startDate":"2014-04-03T00:00:00Z",
+                     "endDate":"2015-04-03T00:00:00Z"
+                  },
+                  "requirement":{
+                     "id":"T2",
+                     "title":"FY 2"
+                  }
+               },
+               {
+                  "id":"T3",
+                  "value":{
+                     "amount":9941927.15,
+                     "currency":"EUR"
+                  },
+                  "period":{
+                     "startDate":"2015-04-03T00:00:00Z",
+                     "endDate":"2016-04-03T00:00:00Z"
+                  },
+                  "requirement":{
+                     "id":"T3",
+                     "title":"FY 3"
+                  }
+               }
+            ]
+         }
       ]
-    }
+   }
+}
 ```
 
 ## Further extensions
